@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calcul de l'indice de masse corporelle</title>
+</head>
+<body>
+<script>
+	paragraphe = document.createElement('p')
+	paragraphe.setAttribute('id','paragraphe1')
+	texte = document.createTextNode('Calcul de votre indice de masse corporelle.')
+	paragraphe.appendChild(texte)
+	document.body.appendChild(paragraphe)
+	inputVariable = document.createElement('input')
+	inputVariable.setAttribute('id','input1')
+	inputVariable.setAttribute('onchange','affiche()')
+	inputVariable.value='Entrez votre taille ici'
+	document.body.appendChild(inputVariable) 
+	inputVariable = document.createElement('input')
+	inputVariable.setAttribute('id','input2')
+	inputVariable.setAttribute('onchange','affiche()')
+	inputVariable.value='Entrez votre masse ici'
+	document.body.appendChild(inputVariable) 
+
+	function affiche(){
+	T=document.getElementById('input1').value
+	M=document.getElementById('input2').value
+	paragraphe=document.getElementById('paragraphe1')
+	paragraphe.removeChild( paragraphe.firstChild)
+	IMC = M/(T*T)
+	texte = document.createTextNode('Résultat : '+IMC)
+	paragraphe.appendChild(texte)
+	}
+</script>
+</body>
+</html>
