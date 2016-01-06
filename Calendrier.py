@@ -3,6 +3,6 @@
 
 print ("Voila le calendrier de l'année : ") #affiche le message#
 tableau1=["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
-tableau2=["janvier","février","mars","avril","mai","juin","juillet","aout","septembre","novembre","décembre"]
+tableau2=["janvier","février","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","décembre"]
 
 #En cours#
