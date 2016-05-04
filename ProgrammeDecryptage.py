@@ -1,7 +1,7 @@
 #!/usr/bin/env python2.7
 # -*- coding: utf-8 -*-
 # Logiciel de cryptage en python par JSraveen
-# Phase 1 : Cryptage par décalage (Algorithme de Cesar)
+# Phase 2 : Déryptage par décalage (Algorithme de Cesar)
 
 #DEBUT#
 print ("Debut du programme:")
